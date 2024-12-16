@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cambia Caratteri</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif; /* Font di default */
+            padding: 20px;
+        }
+        button {
+            padding: 10px 20px;
+            margin-top: 20px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Cambia la Famiglia di Caratteri della Pagina</h1>
+    <p>Premi il pulsante sottostante per cambiare il font di tutta la pagina.</p>
+
+    <!-- Pulsante per cambiare il font -->
+    <button onclick="cambiaFont()">Cambia Font</button>
+
+    <script>
+        function cambiaFont() {
+            // Ottieni l'elemento body
+            var body = document.body;
+
+            // Cambia la famiglia di caratteri a 'Courier New'
+            if (body.style.fontFamily === "Courier New") {
+                body.style.fontFamily = "Arial, sans-serif"; // Torna al font di default
+            } else {
+                body.style.fontFamily = "Courier New, monospace"; // Cambia il font a Courier New
+            }
+        }
+    </script>
+
+</body>
+</html>

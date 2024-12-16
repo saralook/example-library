@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animazione con Pulsante</title>
+    <style>
+        /* Stile dell'oggetto da animare */
+        #myDIV {
+            width: 100px;
+            height: 100px;
+            background-image: url('https://pngimg.com/uploads/sun/small/sun_PNG13414.png');
+            background-size:cover;
+            position: relative;
+        }
+
+        /* Definizione dell'animazione */
+        @keyframes movimento {
+            0% {
+                left: 0;
+            }
+            100% {
+                left: 300px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Pulsante per attivare l'animazione -->
+    <button onclick="image()">Avvia Animazione</button>
+
+    <!-- Oggetto da animare -->
+    <div id="myDIV"></div>
+
+    <script>
+        function image() {
+            // Aggiungi l'animazione all'oggetto
+            document.getElementById("myDIV").style.animation = "movimento 10s 1";
+        }
+    </script>
+
+</body>
+</html>

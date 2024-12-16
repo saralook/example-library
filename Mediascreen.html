@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mediascreen</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Protest+Guerrilla&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Acme&family=Caveat:wght@400..700&display=swap" rel="stylesheet">
+
+    <style>
+         * {margin: 0px;
+        }
+        .uno, .due {width:100%;
+            height:auto;
+
+        }
+        
+        p{padding:10px;
+        }
+
+        @media screen and (max-width:420px){
+
+            .coniglio, .scoiattolo, .volatili, .gatto {
+            width:120px;
+            height:120px;
+            margin:30px;
+            text-align:center;
+        }
+
+        div{display: flex;
+	        display: -webkit-flex;
+	        flex-direction: column;
+	        -webkit-flex-direction: column;
+	        flex: 1;
+	        -webkit-flex: 1;
+	        overflow: hidden;
+
+        }    
+        .coniglio{
+            background-image: url("https://cdn.pixabay.com/photo/2023/01/04/09/25/boho-7696303_640.jpg");
+            background-size: cover;
+            background-repeat: no-repeat;
+            font-family: "Caveat", cursive;
+
+        }
+        .scoiattolo{
+            background-image: url("https://cdn.pixabay.com/photo/2021/09/28/11/48/squirrel-6664212_640.png");
+            background-size: cover;
+            background-repeat: no-repeat;
+            font-family: "Acme", sans-serif;
+        }
+        .volatili{
+            background-image: url("https://cdn.pixabay.com/photo/2023/11/27/21/14/birds-8416206_640.jpg");
+            background-size: cover;
+            background-repeat: no-repeat;
+            font-family: "Pacifico", cursive;
+        }
+        .gatto{
+            background-image: url("https://cdn.pixabay.com/photo/2023/11/24/18/52/cat-8410502_640.jpg");
+            background-size: cover;
+            background-repeat: no-repeat;
+            font-family: "Protest Guerrilla", sans-serif;
+            
+        }
+    }
+        @media screen and (min-width:421px){
+
+            .coniglio, .scoiattolo, .volatili, .gatto {
+            width:400px;
+            height:400px;
+            margin:30px;
+            text-align:center;
+        }
+
+        div{display: flex;
+	        display: -webkit-flex;
+	        flex-direction: row;
+	        -webkit-flex-direction: row;
+	        justify-content: space-between;
+	        -webkit-justify-content: space-between;
+
+        }
+        .coniglio{
+            background-image: url("https://cdn.pixabay.com/photo/2023/01/04/09/25/boho-7696303_640.jpg");
+            background-size: cover;
+            background-repeat: no-repeat;
+            font-family: "Caveat", cursive;
+            
+        }
+        .scoiattolo{
+            background-image: url("https://cdn.pixabay.com/photo/2021/09/28/11/48/squirrel-6664212_640.png");
+            background-size: cover;
+            background-repeat: no-repeat;
+            font-family: "Acme", sans-serif;
+            
+        }
+        .volatili{
+            background-image: url("https://cdn.pixabay.com/photo/2023/11/27/21/14/birds-8416206_640.jpg");
+            background-size: cover;
+            background-repeat: no-repeat;
+            font-family: "Pacifico", cursive;
+           
+        }
+        .gatto{
+            background-image: url("https://cdn.pixabay.com/photo/2023/11/24/18/52/cat-8410502_640.jpg");
+            background-size: cover;
+            background-repeat: no-repeat;
+            font-family: "Protest Guerrilla", sans-serif;
+            
+        }
+    }
+
+
+    </style>
+</head>
+
+<body>
+    <div class="uno">
+    <div class="coniglio">
+        <p>
+            Illustrazione di un coniglio che regge dei fiori guardandosi attorno in un prato
+        </p>
+    </div>
+    <div class="scoiattolo">
+        <p>Illustrazione di uno scoiattolo con una noce su un ramo con foglie autunnali</p>
+        
+    </div>
+</div>
+<div class="due">
+    <div class="volatili">
+        <p>Illustrazione di due uccellini su un ramo ciliegio in fioritura primaverile</p>
+        
+    </div>
+    <div class="gatto">
+        <p>Illustrazione di un gatto nero che emerge dal suo nascondiglio dietro una pianta</p>
+        
+    </div>
+</div>
+</body>
+</html>

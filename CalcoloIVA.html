@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calcolo IVA</title>
+    <script>
+        // Funzione per aggiungere l'IVA al prezzo
+        function aggiungiIva() {
+            var prezzo = parseFloat(document.getElementById('prezzo').value);
+            if (isNaN(prezzo) || prezzo <= 0) {
+                alert("Inserisci un prezzo valido.");
+                return;
+            }
+            var iva = 22;
+            var prezzoConIva = prezzo + (prezzo * iva / 100);
+            document.getElementById('risultatoAggiungi').innerHTML = "Prezzo con IVA (22%): €" + prezzoConIva.toFixed(2);
+        }
+
+        // Funzione per scorporare l'IVA dal prezzo già con IVA
+        function scorporareIva() {
+            var prezzoConIva = parseFloat(document.getElementById('prezzoConIva').value);
+            if (isNaN(prezzoConIva) || prezzoConIva <= 0) {
+                alert("Inserisci un prezzo valido.");
+                return;
+            }
+            var iva = 22;
+            var prezzoSenzaIva = prezzoConIva / (1 + iva / 100);
+            var importoIva = prezzoConIva - prezzoSenzaIva;
+            document.getElementById('risultatoScorporo').innerHTML = "Prezzo senza IVA: €" + prezzoSenzaIva.toFixed(2) + "<br>IVA: €" + importoIva.toFixed(2);
+        }
+    </script>
+</head>
+<body>
+
+    <h2>Calcolo IVA</h2>
+
+    <div>
+        <h3>Aggiungi l'IVA (22%) ad un prezzo:</h3>
+        <label for="prezzo">Inserisci il prezzo senza IVA (€):</label>
+        <input type="number" id="prezzo" step="0.01" min="0">
+        <button onclick="aggiungiIva()">Calcola</button>
+        <p id="risultatoAggiungi"></p>
+    </div>
+
+    <div>
+        <h3>Scorporare l'IVA (22%) da un prezzo già con IVA:</h3>
+        <label for="prezzoConIva">Inserisci il prezzo con IVA (€):</label>
+        <input type="number" id="prezzoConIva" step="0.01" min="0">
+        <button onclick="scorporareIva()">Calcola</button>
+        <p id="risultatoScorporo"></p>
+    </div>
+
+</body>
+</html>

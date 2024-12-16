@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Position Absolute</title>
+
+    <style>
+         * {margin: 0px;
+        }
+        
+        .desolate, .near, .city{
+            width:100%;
+            height:auto;
+            margin:10px;
+            display:flex;
+        }
+        img{width:50%;
+            height:auto;
+        }
+        .menu{
+            background-image: url(https://cdn.pixabay.com/photo/2023/12/31/19/19/mountains-8480519_640.jpg);
+            background-size:cover;
+        }
+        body{
+            background-image: url(https://cdn.pixabay.com/photo/2021/09/29/18/16/background-6668146_640.jpg);
+            background-size:cover;
+            background-repeat:inherit;
+        }
+        .titolo{margin:5px;
+        }
+        #Montagna1{
+            margin:5px;
+            padding:5px;
+            text-align:left;
+            position:absolute;
+        }
+        #Montagna2{
+            margin:5px;
+            padding:5px;
+            text-align:left;
+            position:absolute;
+        }
+        #Montagna3{
+            color:beige;
+            margin:5px;
+            padding:5px;
+            text-align:left;
+            position:absolute;
+        }
+    
+    </style>
+
+</head>
+
+<body>
+<div class="menu">
+    <div class="titolo">
+        <p>
+            <h2>Paesaggi nel tempo</h2>
+        </p>
+
+    </div>
+    <div class="lista">
+        <ul>
+            <li>Nella natura</li>
+            <li>Vicini alle città</li>
+            <li>Centri urbanistici</li>
+        </ul>
+    </div>
+</div>
+<div class="riquadri">
+    <div class="desolate">
+    <img src="https://cdn.pixabay.com/photo/2023/11/21/22/04/mountains-8404362_640.jpg" alt="montagna">
+    <p id="Montagna1">Montagna <br>
+    paesaggio<br>
+    estivo
+</p>
+    <img src="https://cdn.pixabay.com/photo/2023/11/08/05/46/winter-8373941_640.jpg" alt="montagna">
+    </div>
+    <div class="near">
+    <img src="https://cdn.pixabay.com/photo/2023/10/20/19/24/path-8330103_640.jpg" alt="natura">
+    <p id="Montagna2">Paesaggio<br>
+        campagna
+    </p>
+    <img src="https://cdn.pixabay.com/photo/2023/03/12/19/18/trees-7847683_640.jpg" alt="natura">
+    </div>
+    <div class="city">
+    <img src="https://cdn.pixabay.com/photo/2023/11/06/04/53/woman-8368830_640.jpg" alt="città">
+    <p id="Montagna3">Paesaggio<br>
+        autunno
+    </p>
+    <img src="https://cdn.pixabay.com/photo/2021/12/26/20/49/christmas-6895856_640.jpg" alt="città">
+    </div>
+</div>
+</body>
+</html>

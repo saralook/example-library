@@ -28,10 +28,9 @@
     <label for="numero3">Numero 3:</label>
     <input type="number" id="numero3" required><br>
 
-    <!-- Bottone per calcolare la somma -->
+   
     <button onclick="calcolaSomma()">Calcola Somma</button>
 
-    <!-- Paragrafo dove verrà mostrato il risultato -->
     <p id="risultato"></p>
 
     <script>
@@ -41,10 +40,9 @@
             var numero2 = parseFloat(document.getElementById("numero2").value);
             var numero3 = parseFloat(document.getElementById("numero3").value);
 
-            // Somma dei numeri
             var somma = numero1 + numero2 + numero3;
 
-            // Verifica se i valori inseriti sono numerici
+            
             if (isNaN(somma)) {
                 document.getElementById("risultato").innerHTML = "Per favore, inserisci numeri validi in tutti i campi.";
             } else {

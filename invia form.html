@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modulo di Contatto</title>
+</head>
+<body>
+    <h2>Modulo di Contatto</h2>
+    <form action="invia_email.php" method="POST">
+        <label for="nome">Nome: <sup>*</sup></label>
+        <input type="text" id="nome" name="nome" required><br><br>
+        
+        <label for="cognome">Cognome: <sup>*</sup></label>
+        <input type="text" id="cognome" name="cognome" required><br><br>
+
+        <label for="societa">Nome della società (opzionale): </label>
+        <input type="text" id="societa" name="societa"><br><br>
+
+        <label for="paese">Paese/Regione: <sup>*</sup></label>
+        <input type="text" id="paese" name="paese" required><br><br>
+
+        <label for="via">Via e numero: <sup>*</sup></label>
+        <input type="text" id="via" name="via" required><br><br>
+
+        <label for="citta">Città: <sup>*</sup></label>
+        <input type="text" id="citta" name="citta" required><br><br>
+
+        <label for="provincia">Provincia: <sup>*</sup></label>
+        <input type="text" id="provincia" name="provincia" required><br><br>
+
+        <label for="cap">C.A.P.: <sup>*</sup></label>
+        <input type="text" id="cap" name="cap" required><br><br>
+
+        <label for="telefono">Telefono: <sup>*</sup></label>
+        <input type="text" id="telefono" name="telefono"><br><br>
+
+        <label for="email">Indirizzo E-mail: <sup>*</sup></label>
+        <input type="email" id="email" name="email" required><br><br>
+
+        <input type="submit" value="Invia">
+    </form>
+</body>
+</html>

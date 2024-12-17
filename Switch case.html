@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Switch/case</title>
+</head>
+<body>
+
+
+   <script>
+    let preferenza = prompt('Come ti senti?');
+  /* variabile da testare per le diverse ipotesi */
+	switch(preferenza)
+
+    {
+        /* per tutte le ipotesi non verificate dagli altri casi */
+		default: 
+			document.write("Un emozione normale");
+			break;
+         /* ipotesi che scrivano pizza */   
+		case "Triste":
+			document.write("Mi spiace");
+			break; 
+            /* ipotesi che scrivano baba */   
+		case "Arrabbiato":
+			document.write("Prova ad essere più tranquillo");
+            break; 
+              /* ipotesi che scrivano casatiello */ 
+        case "Non lo so":
+         document.write("Pensaci un po'");   
+	}
+    </script>
+
+
+</body>
+</html>
